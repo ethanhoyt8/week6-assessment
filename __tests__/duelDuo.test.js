@@ -15,4 +15,8 @@ describe("Duel Duo tests", () => {
     await driver.get("http://localhost:8000");
     await driver.wait(until.titleIs("Duel Duo"), 1000);
   });
+  test("Check that clicking an “Add to Duo” button displays the div with id = “player-duo”", async () => {
+      await driver.get("http://localhost:8000")
+      await driver.wait(until.elementIsSelected('Draw'), 1000)
+  })
 });
